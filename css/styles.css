@@ -3,81 +3,183 @@
     padding: 0;
     font-family: sans-serif;
 }
+
 section {
     padding: 50px 0;
 }
 
+
 /* 
  ======================== Navigation =============================
 */
+
 .nav {
     display: flex;
     justify-content: space-between;
 }
-.nav ul.hide{
+
+.logo {
+    width: auto;
+    height: auto;
+    background-color: gold;
+    border-radius: 90px;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.tittle-primary {
+    color: gold;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav ul.hide {
     display: none;
 }
+
 #menu {
     top: 40px;
     position: fixed;
     height: 100vh;
     width: 200px;
-    background-color: black;
-    color: white;
+    background-color: gold;
+    color: black;
     right: 0;
+}
+
+.nav ul.members {
+    display: none;
+}
+
+#menutwo {
+    top: 150px;
+    position: fixed;
+    height: 100px;
+    width: 50px;
+    background-color: gold;
+    color: black;
+    right: 0;
+    left: 320px;
+}
+
+.a {
+    padding: 20px;
+    text-decoration: none;
 }
 
 
 /* 
  ======================== Banner =============================
 */
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    background-color: rgba(158, 158, 158, 0.38);
-    background-image: url('../img/face.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    margin: auto;
+
+.settion-share {
+    display: flex;
+    justify-content: flex-end;
 }
 
-
-/* 
- ======================== Posts =============================
-*/
-.posts {
-    background-color: azure;
+.New-circle {
+    background-color: chartreuse;
+    border-radius: 15px;
+    width: 100px;
+    height: 15px;
 }
 
-/*
-======================== Components =============================
-*/
-.primary-button {
-    background-color: #0d1568;
-    color: white;
-    padding: 8px 15px;
-    border: 0;
-}
-
-.card {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-    background-color: white;
-}
-.card .card-body {
+.New-circlefather {
     padding: 20px;
 }
 
-
-/*
-======================== Helpers =============================
-*/
-.primary-text {
-    color: #0d1568;
-}
-.center-text {
+.p-circle {
+    color: white;
+    font-size: 10px;
+    padding: 2px;
     text-align: center;
 }
-.space-top {
-    margin-top: 20px;
+
+
+/*--tittle-estatus---*/
+
+.settion-status {
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    font-size: 20px;
+    color: white;
+}
+
+
+/*----CIRCLES----*/
+
+.circles-father {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.circles {
+    position: relative;
+}
+
+.circle-fuera-tree {
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 50%;
+    background-color: white;
+    border: gold 2px solid;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.circle-fuera-two {
+    width: 160px;
+    height: 160px;
+    color: white;
+    border-radius: 50%;
+    background-color: white;
+    border: gold 2px solid;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.circle-center-one {
+    width: 100px;
+    height: 100px;
+    color: white;
+    border-radius: 50%;
+    background-color: white;
+    border: gold 2px solid;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+.circle-center {
+    width: 40px;
+    height: 40px;
+    color: black;
+    border-radius: 50%;
+    background-color: white;
+    border: gold 2px solid;
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
+
+
+/*-----list de Members------*/
+
+.membersone {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    font-size: 8px;
+    color: white;
+    text-decoration: none;
+    width: 30px;
+    height: 30p;
 }
